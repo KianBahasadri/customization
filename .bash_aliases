@@ -1,0 +1,13 @@
+alias 'g+'='function my_func(){ g++ -Wall "$1"; ./a.out; }; my_func'
+alias 'py3'='python3 -B'
+alias 'clip'='xclip -selection clipboard'
+alias 'unfuck_wifi'='sudo systemctl restart NetworkManager'
+alias 'paste'='xclip -selection clipboard -o'
+alias l='ls -lh'
+alias la='l -a'
+alias yt-dlp-mp3='yt-dlp -x --audio-format mp3'
+alias 'cvlc'='cvlc --play-and-exit'
+alias cdmemes='cd /home/kian/Desktop/Memes'
+alias list='l -t | head'
+alias terminal='gnome-terminal'
+
