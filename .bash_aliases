@@ -10,4 +10,3 @@ alias 'cvlc'='cvlc --play-and-exit'
 alias cdmemes='cd /home/kian/Desktop/Memes'
 alias list='l -t | head'
 alias terminal='gnome-terminal'
-
