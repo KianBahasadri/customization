@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Check if running with root privileges
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Install required packages
+apt update
+apt install -y xclip yt-dlp network-manager
+
+# Check if installation was successful
+if [[ $? -ne 0 ]]; then
+    echo "Failed to install one or more packages. Aborting."
+    exit 1
+fi
+
+echo "Installation completed successfully."
